@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import argparse
-from io import BytesIO
 
 __author__ = 'kohou.wang'
 __time__ = '18-7-24'
@@ -24,9 +23,20 @@ __time__ = '18-7-24'
 
 
    English:
-a simple interface based on PyQt5, used for manual image labeling, dichotomy supported only so far.
-note:
-    when run, the keyboard listen
+A simple interface based on PyQt5, used for manual image labeling, dichotomy supported only so far.
+Note:
+    When run, the keyboard listen event will block all keys except: left arrow, right arrow, key F and key J.
+    If you wanna end this program, just shut down the pop-up image window.
+    While labeling, left arrow means vague, and right arrow means sharp.
+    Accordingly, key F means vague, and key J means sharp.
+    Intuition for this definition is : when A sharp image is saw, you should just go on to next, namely right arrow;
+    and hence vague images should invoke a left arrow.
+    Meanwhile, remember this is a one-chance job: no opportunity to go back to last image.
+    This is a bit cruel, but a bit efficient as well. And because of the only valid 4 keys, you won't be bothered by
+    skipping images by hitting other keys accidentally.
+Hope this small program can save a little precious time for us people doing manual labeling job~~
+That's all, regards.
+    
 
 '''
 
