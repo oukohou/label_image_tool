@@ -2,7 +2,7 @@
 
 #### 一个简单的基于PyQt5的图像标注界面，目前只支持二分类。搞了一天终于搞出来了，撒花。
 
-####注意：
+#### 注意： 
 
 运行之后，键盘监听事件中屏蔽了除：向左箭头、向右箭头、f键、j键以外的所有按键。
 
@@ -45,4 +45,5 @@ This is a bit cruel, but a bit efficient as well. And because of the only valid 
 skipping images by hitting other keys accidentally.
 
 Hope this small program can save a little precious time for us people doing manual labeling job~~  
+
 That's all, regards.
